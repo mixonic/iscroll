@@ -305,7 +305,7 @@ iScroll.prototype = {
 				}
 			}
 
-			that._resetPos(200);
+			that._resetPos(600);
 
 			if (that.options.onTouchEnd) that.options.onTouchEnd.call(that, e);
 			return;
@@ -331,7 +331,7 @@ iScroll.prototype = {
 			return;
 		}
 
-		that._resetPos(200);
+		that._resetPos(600);
 		if (that.options.onTouchEnd) that.options.onTouchEnd.call(that, e);
 	},
 	
@@ -390,7 +390,7 @@ iScroll.prototype = {
 		if (that.animating) return;
 
 		if (!that.steps.length) {
-			that._resetPos(400);
+			that._resetPos(800);
 			return;
 		}
 
@@ -529,7 +529,7 @@ iScroll.prototype = {
 
 		that.scroller.style[vendor + 'TransitionDuration'] = '0';
 
-		that._resetPos(200);
+		that._resetPos(600);
 	},
 
 	scrollTo: function (x, y, time, relative) {
